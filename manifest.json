@@ -1,0 +1,23 @@
+{
+  "name": "Instâncias da Sprinthub",
+  "description": "Alterando automaticamente o nome da aba com o nome da instância.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_icon": "assets/icon-sh-128.png"
+  },
+  "icons": {
+    "16": "assets/icon-sh-16.png",
+    "32": "assets/icon-sh-32.png",
+    "48": "assets/icon-sh-48.png",
+    "128": "assets/icon-sh-128.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://*.sprinthub.app/*"
+      ]
+    }
+  ]
+}
